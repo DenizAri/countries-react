@@ -5,7 +5,7 @@ import countriesAll from "./countriesAll.json";
 import Header from "./Header";
 import CountryList from "./CountryList";
 import SearchBox from "./SearchBox";
-import Cards from "./Cards";
+
 function App() {
   const [fetchedData, setFetchedData] = useState([]);
 
@@ -36,8 +36,8 @@ function App() {
   return (
     <div>
       <Header />
-      <CountryList countries={countriesAll} />
       <SearchBox />
+      <CountryList countries={countriesAll} />
     </div>
   );
 }
