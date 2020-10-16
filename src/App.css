@@ -11,3 +11,11 @@
   font-weight: 200;
   margin-left: 50px;
 }
+img {
+  width: 250px;
+  height: 150px;
+  padding-right: 30px;
+}
+body {
+  background-color: rgb(145, 216, 209);
+}
