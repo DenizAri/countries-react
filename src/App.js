@@ -20,20 +20,22 @@ function App() {
       });
   }, []);
 
-  // const handleSearch = (event) => {
-  //   let searchString = event.target.value;
-  //   console.log(searchString);
-  //   setFetchedData(
-  //     fetchedData.filter(({ name, capital }) => {
-  //       return (
-  //         name.toLowerCase().includes(searchString) ||
-  //         capital.toLowerCase().includes(searchString)
-  //       );
-  //     })
-  //   );
-  // };
+  const handleSearch = (event) => {
+    let searchString = event.target.value;
+    console.log(searchString);
+    setFetchedData(
+      fetchedData.filter(({ name, capital }) => {
+        return (
+          name.toLowerCase().includes(searchString) ||
+          capital.toLowerCase().includes(searchString)
+        );
+      })
+    );
+  };
+
   return (
     <div>
+      handleSearch={handleSearch}
       <Header />
       <SearchBox />
       <CountryList countries={countriesAll} />
